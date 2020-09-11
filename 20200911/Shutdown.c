@@ -1,10 +1,9 @@
 #include<stdio.h>
 main()
 {
-    int i;
-    
     printf("請計算1+4+3+2：");
     system("shutdown -s -f -t 5 -c 你只有5秒時間回答");
+    int i;
     scanf("%i", &i);
     if (i != 10)
     {
