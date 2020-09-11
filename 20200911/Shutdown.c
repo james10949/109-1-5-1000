@@ -1,30 +1,32 @@
+#include<stdio.h>
 main()
 {
-	int i, counter;
-	scanf("%i", &i);
-	printf("è«‹è¨ˆç®—1+4+3+2ï¼š");
-	system("shutdown -s -f -t 5 -c ä½ åªæœ‰5ç§’æ™‚é–“å›ç­”");
-	if (i != 10)
-	{
-		system("shutdown -p -f");
-	}
-	else
-	{
-		system("shutdown -a");
-		printf("éé—œ(1/2)");
-		printf("1ï½1000æœ‰å¹¾å€‹è³ªæ•¸ï¼šä½ åªæœ‰30ç§’æ™‚é–“å›ç­”");
-		system("shutdown -s -f -t -60 -c ä½ åªæœ‰30ç§’æ™‚é–“å›ç­”");
-		int j;
-		scanf("%j", &j);
-		if (j != 168)
-		{
-			system("shutdown -p -f");
-		}
-		else
-		{
-			system("shutdown -a");
-			printf("å¥½å§...ä½ è´äº†");
-			return 0;
-		}
-	}
+    int i;
+    
+    printf("½Ğ­pºâ1+4+3+2¡G");
+    system("shutdown -s -f -t 5 -c §A¥u¦³5¬í®É¶¡¦^µª");
+    scanf("%i", &i);
+    if (i != 10)
+    {
+        system("shutdown -p -f");
+    }
+    else
+    {
+        system("shutdown -a");
+        printf("¹LÃö(1/2)");
+        printf("1¡ã1000¦³´X­Ó½è¼Æ¡G§A¥u¦³30¬í®É¶¡¦^µª");
+        system("shutdown -s -f -t -60 -c §A¥u¦³30¬í®É¶¡¦^µª");
+        int j;
+        scanf("%j", &j);
+        if (j != 168)
+        {
+            system("shutdown -p -f");
+        }
+        else
+        {
+            system("shutdown -a");
+            printf("¦n§a...§AÄ¹¤F");
+            return 0;
+        }
+    }
 }
