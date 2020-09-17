@@ -1,3 +1,3 @@
 main(){
-    system("shutdown -a");
+	system("shutdown -a");
 }
