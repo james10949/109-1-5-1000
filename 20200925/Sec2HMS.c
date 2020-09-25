@@ -7,17 +7,16 @@ Copyright SJ Project 2020 All Rights Reserved
 
 main()
 {
-	int input, hh, mm, ss;
+	int hh, mm, ss;
 	printf("請輸入準備轉換的秒數：");
-	sacnf("%d", &input);
-	for (mm = 0; input < 60; mm++)
+	scanf("%d", &ss);
+	for (mm = 0; ss >= 60; mm++)
 	{
-		input = input - 60;
+		ss = ss - 60;
 	}
-	input = ss;
-	for (hh = 0; mm < 60; hh++)
+	for (hh = 0; mm >= 60; hh++)
 	{
 		mm = mm - 60;
 	}
-	printf("hh:mm:ss =" + hh + ":" + mm + ":" + ss);
+	printf("hh:mm:ss = %02d:%02d:%02d", hh, mm, ss);
 }
