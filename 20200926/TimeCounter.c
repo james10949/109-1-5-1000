@@ -26,6 +26,10 @@ main()
 	{
 		ResultHour = ResultHour - 1;
 		ResultMinute = ResultMinute + 60;
+		if (ResultHour < 0)
+		{
+			ResultHour = ResultHour + 24;
+		}
 	}
 
 	//Output
@@ -39,6 +43,6 @@ main()
 	}
 	else
 	{
-		printf("%d:%d", ResultHour, ResultMinute);
+		printf("%d %d", ResultHour, ResultMinute);
 	}
 }
